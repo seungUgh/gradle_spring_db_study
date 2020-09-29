@@ -13,6 +13,7 @@ public class MemberRowMapper implements RowMapper<Member> {
         String password = rs.getString("PASSWORD");
         String name = rs.getString("NAME");
         LocalDateTime registerDateTime = rs.getTimestamp("REGDATE").toLocalDateTime();
+        
         Member member = new Member(email, password, name, registerDateTime);
         member.setId(rs.getLong("ID"));
         

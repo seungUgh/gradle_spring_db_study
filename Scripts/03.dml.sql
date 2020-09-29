@@ -7,6 +7,8 @@
 
 INSERT INTO MEMBER(EMAIL, PASSWORD, NAME, REGDATE) 
 values('test@test.co.kr', '1111', 'test', '2020-09-28');
+INSERT INTO MEMBER(EMAIL, PASSWORD, NAME, REGDATE) 
+values('test2@test.co.kr', '1111', 'test2', '2020-09-28');
 
 SELECT ID, EMAIL, PASSWORD, NAME, REGDATE FROM MEMBER WHERE EMAIL = 'test@test.co.kr';
 
